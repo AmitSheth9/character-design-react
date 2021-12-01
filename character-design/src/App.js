@@ -1,9 +1,9 @@
 
 import './App.css';
 import { useState } from 'react';
-import Dropdown from './Components/Dropdown';
-import Display from './Components/Display';
-import PhraseDisplay from './Components/PhraseDisplay';
+import Dropdown from './Components/Dropdown/Dropdown';
+import Display from './Components/Display/Display';
+import PhraseDisplay from './Components/PhraseDisplay/PhraseDisplay';
 
 function App() {
 
