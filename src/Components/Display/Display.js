@@ -1,4 +1,5 @@
 import React from 'react'
+import '../Dropdown/dropdown.css';
 
 export default function Display({ head, middle, bottom}) {
     return (

@@ -17,7 +17,7 @@ export default function Dropdown({ handleSubmit, input, setInput, head, setHead,
                 ))}
             </select>
             </label>
-
+                    <br/>
             <label>
                 Middle
             <select value={middle} onChange={e => setMiddle(e.target.value)}>
@@ -26,7 +26,7 @@ export default function Dropdown({ handleSubmit, input, setInput, head, setHead,
                 }))}
             </select>
             </label>
-
+                <br/>
             <label>
                 Bottom
             <select value={bottom} onChange={e => setBottom(e.target.value)}>
