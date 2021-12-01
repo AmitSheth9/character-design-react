@@ -1,36 +1,37 @@
 
 import './App.css';
 import { useState } from 'react';
-import Dropdown from './Components/Dropdown';
-import Display from './Components/Display';
-import PhraseDisplay from './Components/PhraseDisplay';
+import Dropdown from './Components/Dropdown/Dropdown';
+import Display from './Components/Display/Display';
+import PhraseDisplay from './Components/PhraseDisplay/PhraseDisplay';
 
 function App() {
 
-  const headArr = ['Duck', 'Bird', 'Dog', 'Horse'];
-  const middleArr = ['Blue', 'Fancy', 'Pink','Red'];
-  const bottomArr = ['Single-Leg', 'White-Pants', 'Blue-Jeans'];
+  
 
   const [head, setHead] = useState('Dog');
   const [middle, setMiddle] = useState('Blue');
   const [bottom, setBottom] = useState('White-Pants');
-
+  const [input, setInput] = useState('');
   const [phrases, setPhrases] = useState([]);
+
+  function handleSubmit (){
+    setPhrases((prevState) => [...prevState, input]);
+}
   return (
     <div >
       <Dropdown 
-       title='Head' 
-       headArr={headArr}
-       middleArr={middleArr} 
-       bottomArr={bottomArr} 
        head={head}
        setHead={setHead}
        middle={middle}
        setMiddle={setMiddle}
        bottom={bottom}
        setBottom={setBottom}
+       input={input}
+       setInput={setInput}
        phrases={phrases}
        setPhrases={setPhrases}
+       handleSubmit={handleSubmit}
        />
        <div className='container'>
           <Display 

@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Dropdown component 1`] = `
+<div>
+  <div>
+    <label>
+      Head
+      <select>
+        <option>
+          Duck
+        </option>
+        <option>
+          Bird
+        </option>
+        <option>
+          Dog
+        </option>
+        <option>
+          Horse
+        </option>
+      </select>
+    </label>
+    <label>
+      Middle
+      <select>
+        <option>
+          Blue
+        </option>
+        <option>
+          Fancy
+        </option>
+        <option>
+          Pink
+        </option>
+        <option>
+          Red
+        </option>
+      </select>
+    </label>
+    <label>
+      Bottom
+      <select>
+        <option>
+          Single-Leg
+        </option>
+        <option>
+          White-Pants
+        </option>
+        <option>
+          Blue-Jeans
+        </option>
+      </select>
+    </label>
+    <div>
+      <label>
+        Add a catchphrase:
+        <input />
+        <button>
+          Add catchphrase
+        </button>
+      </label>
+    </div>
+  </div>
+</div>
+`;
