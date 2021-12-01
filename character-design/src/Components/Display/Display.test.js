@@ -3,10 +3,10 @@ import Display from './Display'
 
 it('should display the Display component', () => {
     const {container} = render(<Display head='dog' middle='fancy' />)
-        const head = screen.getByLabelText(/head/);
+    const head = screen.getByAltText(/h/);
         
-        
-        expect(container).toMatchSnapshot();
+    expect(head).toBeInTheDocument();
+    expect(container).toMatchSnapshot();
         
 
 

@@ -4,9 +4,9 @@ export default function Display({ head, middle, bottom}) {
     return (
     <div>
         <div className='pic-container'>
-            <img className='head' src={`${head}-head.png`} alt=''/> 
-            <img className='middle' src={`${middle}-middle.png`} alt=''/>
-            <img className='bottom' src={`${bottom}.png`} alt='' />
+            <img className='head' src={`${head}-head.png`} alt='h'/> 
+            <img className='middle' src={`${middle}-middle.png`} alt='m'/>
+            <img className='bottom' src={`${bottom}.png`} alt='b' />
         </div>
         
     </div>

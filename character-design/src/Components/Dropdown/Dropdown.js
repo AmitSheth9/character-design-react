@@ -1,38 +1,40 @@
-import { useState } from "react";
+
 import React from 'react'
 import './dropdown.css'
 
-export default function Dropdown({title, head, setHead, middle, setMiddle, bottom, setBottom, headArr, middleArr, bottomArr, phrases, setPhrases}) {
+export default function Dropdown({ handleSubmit, input, setInput, head, setHead, middle, setMiddle, bottom, setBottom, phrases, setPhrases}) {
  
-
-const [input, setInput] = useState('');
-const phraseArr = [];
-
- console.log(head, middle, bottom, phrases);
-
- function handleSubmit () {
-        //phraseArr.push(input);
-        setPhrases((prevState) => [...prevState, input]);
- }
-    
+    const headArr = ['Duck', 'Bird', 'Dog', 'Horse'];
+    const middleArr = ['Blue', 'Fancy', 'Pink','Red'];
+    const bottomArr = ['Single-Leg', 'White-Pants', 'Blue-Jeans'];
     return (
-        
         <div>
+            <label>
+                Head
             <select value={head} onChange={e => setHead(e.target.value)}> 
-                {headArr.map((item => {
-                    return <option key={item}>{item}</option>
-                }))}
+                {headArr.map((item) => (
+                    <option key={item}>{item}</option>
+                ))}
             </select>
+            </label>
+
+            <label>
+                Middle
             <select value={middle} onChange={e => setMiddle(e.target.value)}>
                 {middleArr.map((item =>{
                     return <option key={item}>{item}</option>
                 }))}
             </select>
+            </label>
+
+            <label>
+                Bottom
             <select value={bottom} onChange={e => setBottom(e.target.value)}>
                 {bottomArr.map((item =>{
                     return <option key={item}>{item}</option>
                 }))}
             </select>
+            </label>
             <div>
                 <label>
                 Add a catchphrase:
@@ -46,5 +48,5 @@ const phraseArr = [];
     
            
         </div>
-    )
+    );
 }

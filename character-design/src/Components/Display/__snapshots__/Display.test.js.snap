@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should display the Display component 1`] = `
+<div>
+  <div>
+    <div
+      class="pic-container"
+    >
+      <img
+        alt="h"
+        class="head"
+        src="dog-head.png"
+      />
+      <img
+        alt="m"
+        class="middle"
+        src="fancy-middle.png"
+      />
+      <img
+        alt="b"
+        class="bottom"
+        src="undefined.png"
+      />
+    </div>
+  </div>
+</div>
+`;
